@@ -1,0 +1,12 @@
+The size of an int is: 4
+The size of a long is: 8
+Value of i = 101
+The address of i = 0x16cfaf708
+The address of l = 0x16cfaf700
+The address of d = 0x16cfaf6f8
+The address of j = 0x16cfaf6f4
+The address of k = 0x16cfaf6f0
+The address of iPtr is: 0x16cfaf6e8
+Value at address 0x16cfaf708 is: 101
+Value at address 0x16cfaf708 is: 102
+Value of i = 102
