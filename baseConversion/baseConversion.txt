@@ -1,0 +1,11 @@
+Input Number: 421
+Input Base: 6
+421 to base 10 is: 157
+
+Input Number: 1232
+Input Base: 4
+1232 to base 10 is: 110
+
+Input Number: 765286221
+Input Base: 9
+765286221 to base 10 is: 332857207
