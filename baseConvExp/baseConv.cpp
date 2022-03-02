@@ -1,3 +1,9 @@
+/*
+    Jancarlos Rodriguez
+    20220301
+    Class examples to help complete the base conversion assignment
+*/
+
 #include <iostream>
 
 using namespace std;
