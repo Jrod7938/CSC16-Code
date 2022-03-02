@@ -1,9 +1,15 @@
+/*
+    Jancarlos Rodriguez
+    20220301
+    Program shows the effects of memory leaks
+*/
+
 #include <iostream>
 
 using namespace std;
 
 int main(){
-    const int AllocSize = 102400;
+    const int AllocSize = 102400000;
     const int Count = 20000000;
     long totalMemAlloc = 0;
 
