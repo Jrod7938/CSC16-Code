@@ -15,6 +15,10 @@ class MyClass{
         int getData();
         // Mutator
         void setData(int data);
+        /* inline example
+        inline int myFastFunc(){
+            return 1+1;
+        }*/
     private:
         int data;
 
