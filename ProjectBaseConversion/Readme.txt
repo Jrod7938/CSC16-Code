@@ -1,3 +1,13 @@
+How to run baseConversionV2.cpp by Jancarlos Rodriguez
+
+1. Open terminal
+2. navigate to the baseConversionV2.cpp file
+3. run: g++ baseConversion.cpp -o baseConversionV2.out
+4. run: ./baseConversionV2.out
+5. input the base of the number
+6. input the number you wish to convert (by default 15 digits are allowed, can be changed in code to allow more digits)
+7. press enter
+
 How to run baseConversion.cpp by Jancarlos Rodriguez
 
 1. Open terminal
@@ -8,12 +18,5 @@ How to run baseConversion.cpp by Jancarlos Rodriguez
 6. input the base of the number
 7. press enter
 
-How to run baseConversionV2.cpp by Jancarlos Rodriguez
-1. Open terminal
-2. navigate to the baseConversionV2.cpp file
-3. run: g++ baseConversion.cpp -o baseConversionV2.out
-4. run: ./baseConversionV2.out
-5. input the base of the number
-6. input the number you wish to convert (by default 15 digits are allowed, can be changed in code to allow more digits)
-7. press enter
+
 
