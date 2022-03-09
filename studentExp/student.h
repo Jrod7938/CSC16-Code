@@ -1,10 +1,13 @@
 const int MaxNameSize = 32;
 
-class student{
+class Student{
+    public:
+        // Class Functions
+        void setId(int id);
+        int getId(){ return id; }
 
-    // Class Functions
-    void setId(int id);
-    int getId();
+    void setFirstName(const char *firstName);
+    const char *getFirstName() { return firstName; };
 
     // Private Variables
     private:
