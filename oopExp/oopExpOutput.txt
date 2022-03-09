@@ -1,0 +1,31 @@
+Data 100 out of range 
+50
+50
+
+Please enter data
+29
+29
+mc is bigger than or equal to mc2
+
+
+
+Data 100 out of range 
+50
+50
+
+Please enter data
+16
+16
+mc is smaller than mc2
+
+
+
+Data 100 out of range 
+50
+50
+
+Please enter data
+1
+Data 1 out of range 
+50
+mc is bigger than or equal to mc2
