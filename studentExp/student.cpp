@@ -17,8 +17,15 @@ void Student::setFirstName(const char *firstName){
         this->firstName[i] = firstName[i];
 
         // check if we reached the end of string
-        if(firstName[i]==0)
-            break;  
+        if(firstName[i] == 0){ break; }  
+    }
+}
+
+void Student::setLastName(const char *lastName){
+    for(int i=0; i<MaxNameSize; i++){
+        this->lastName[i] = lastName[i];
+
+        if(firstName[i] == 0){ break; }
     }
 }
 

@@ -12,6 +12,9 @@ class Student{
     void setFirstName(const char *firstName);
     const char *getFirstName(){ return firstName; };
 
+    void setLastName(const char *lastName);
+    const char *getLastName(){ return lastName; };
+
     void setGPA(float gpa);
     float getGPA(){ return gpa; }
 
