@@ -1,3 +1,6 @@
+#ifndef STUDENT_H
+#define STUDENT_H
+
 const int MaxNameSize = 32;
 
 class Student{
@@ -7,7 +10,10 @@ class Student{
         int getId(){ return id; }
 
     void setFirstName(const char *firstName);
-    const char *getFirstName() { return firstName; };
+    const char *getFirstName(){ return firstName; };
+
+    void setGPA(float gpa);
+    float getGPA(){ return gpa; }
 
     // Private Variables
     private:
@@ -20,3 +26,4 @@ class Student{
 
         float gpa;
 };
+# endif // STUDENT_H

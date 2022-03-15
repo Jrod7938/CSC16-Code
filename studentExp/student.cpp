@@ -19,6 +19,13 @@ void Student::setFirstName(const char *firstName){
         // check if we reached the end of string
         if(firstName[i]==0)
             break;  
-        
+    }
+}
+
+void Student::setGPA(float gpa){
+    if (gpa>=0.0 && gpa<=4.0){
+        this->gpa = gpa;
+    } else {
+        cout << "Bad GPA number: " << gpa << endl;
     }
 }
