@@ -49,24 +49,28 @@ void List::insert(DataType data, int pos){
 }
 
 bool List::insertAtEnd(DataType data){
+    // Create a new node
     Node *newNode = new Node;
-    Node *last = first;
+    Node *temp = first;
 
+    // Set newNode's data to data
     newNode->data = data;
 
-    // might be NULL instead of first
-    newNode->next = NULL;
+    // Set new node's next to 0
+    newNode->next = 0;
 
-    if(first == NULL){
+    // If linked list is empty, add newNode
+    if(first == 0){
         first = newNode;
         return true;
-    }
-    while (last->next != NULL)
+    } // If linked list is not empty, go through linked list until the end
+    while (temp->next != 0)
     {
-        last = last->next;
+        temp = temp->next;
     }
 
-    last->next = newNode;
+    // add newNode to the next of the last node
+    temp->next = newNode;
     return true;
 }
 
@@ -113,6 +117,35 @@ bool List::deleteByPos(int pos){
     return true;
 }
 
+bool List::deleteByValue(DataType data){
+    // if list is empty
+    if(empty()){
+        return false;
+    }
+    // if list is not empty
+    // Traverse the list until we find the specified data
+    Node *temp = first;
+    Node *prev = NULL;
+
+    if(temp != NULL && temp->data == data){
+        first = temp->next;
+        delete temp;
+        return true;
+    } else {
+        while(temp != NULL && temp->data != data){
+            prev = temp;
+            temp = temp->next;
+        }
+        if (temp == NULL){
+            return false;
+        }
+        prev->next = temp->next;
+
+        delete temp;
+    }
+    return true;
+}
+
 void List::freeMem(){
     // init temp to begining of list
     Node *temp = first;
@@ -127,3 +160,4 @@ void List::freeMem(){
         delete savePtr;
     }
 }
+

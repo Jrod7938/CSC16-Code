@@ -1,0 +1,99 @@
+Test 1: Display list 1
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+-----------------
+Test 2: Display list 2
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+-----------------
+Test 3: Inserting at position 1
+0
+10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+-----------------
+Test 4: DeleteByPos: 0
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Test 4: DeleteByPos: 1
+0
+2
+3
+4
+5
+6
+7
+8
+9
+Test 4: DeleteByPos: 2
+0
+2
+4
+5
+6
+7
+8
+9
+Test 4: DeleteByPos: 3
+0
+2
+4
+6
+7
+8
+9
+Test 4: DeleteByPos: 4
+0
+2
+4
+6
+8
+9
+-----------------
+Test 5: Insert 18 at the end
+0
+2
+4
+6
+8
+9
+18
+-----------------
+Test 6: Delete 6 from list 2
+0
+2
+4
+8
+9
+18
