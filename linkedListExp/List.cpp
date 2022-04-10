@@ -48,6 +48,28 @@ void List::insert(DataType data, int pos){
     
 }
 
+bool List::insertAtEnd(DataType data){
+    Node *newNode = new Node;
+    Node *last = first;
+
+    newNode->data = data;
+
+    // might be NULL instead of first
+    newNode->next = NULL;
+
+    if(first == NULL){
+        first = newNode;
+        return true;
+    }
+    while (last->next != NULL)
+    {
+        last = last->next;
+    }
+
+    last->next = newNode;
+    return true;
+}
+
 void List::display(std::ostream &out){
     // init temp to begining of list
     Node *temp = first;
@@ -61,7 +83,6 @@ void List::display(std::ostream &out){
 }
 
 
-// TODO: FIX deleteByPos
 bool List::deleteByPos(int pos){
     // if list is empty
     if(empty()){
