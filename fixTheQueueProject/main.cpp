@@ -50,7 +50,6 @@ int main(){
     cout << "After Dequeue: " << endl;
     while(!q2.empty()){
         q2.dequeue();
-        frontofQueue = q2.front();
         q2.display(cout);
     }
 
