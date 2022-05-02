@@ -7,15 +7,16 @@ int factorial(int n){
     return n * factorial(n-1); // Recursive case
 }
 
-bool palindrome(string str){
-
+bool palindrome(string str, int bi, int ei){
+    // Base Case
+    if(ei<=bi){ return true; }
+    else if(str[bi]==str[ei]){ return palindrome(str, bi+1, ei-1); }
+    else { return false; }
 }
 
 int main(){
-    int n;
-    cout << "Enter a number: ";
-    cin >> n;
-    cout << "Factorial of " << n << ": " << factorial(n) <<  endl;
+    string str = "racecar";
 
+    cout << palindrome(str, 0, str.size()-1) << endl;
     return 0;
 }
