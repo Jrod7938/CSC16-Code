@@ -30,7 +30,7 @@ class Queue
         false is returned otherwise.
    -----------------------------------------------------------*/
 
-  void enqueue(const QueueElement & value);
+  bool enqueue(const QueueElement & value);
   /*-----------------------------------------------------------
     Add a value to a queue 
 
@@ -40,7 +40,7 @@ class Queue
         displayed and execution is terminated.
    -----------------------------------------------------------*/
 
-  void display(ostream & out) const;
+  void display(std::ostream & out) const;
   /*-----------------------------------------------------------
     Output the values stored in the queue 
 
@@ -59,7 +59,7 @@ class Queue
         displayed and a "garbage value" is returned.
    ----------------------------------------------------------*/
 
-  void dequeue();
+  bool dequeue();
   /*-----------------------------------------------------------
     Remove value at front of queue (if any)
 
