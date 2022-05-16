@@ -12,7 +12,7 @@ using namespace std;
 
 int main(){
     vector<int> vec;
-        cout << "Enter list of numbers, -1 to stop" << endl;
+    cout << "Enter list of numbers, -1 to stop" << endl;
 
     int data = 0;
     while(data!=-1){
